@@ -1,0 +1,55 @@
+.feature
+    text-align: center
+
+    h2
+        font:
+            size: 44px
+        color: #171C34
+        padding-bottom: 28px
+    
+    img
+        max-width: 740px
+
+    .title-para
+        max-width: 520px
+        margin: 0 auto
+    
+    .button-wrap
+        text-align: center
+
+        button
+            background: $primary-color
+            color: white
+            border-radius: 8px
+            border: none
+            height: 55px
+            width: 200px
+            text-transform: uppercase
+            font-size: 16px
+            box-shadow: 0 10px 50px 0 rgba(7,42,68,0.12)
+            margin: 60px 0
+
+    .features-wrap
+        display: flex
+        flex-wrap: wrap
+        flex-direction: row
+        justify-content: space-around
+        text-align: center
+        align-items: center
+        
+        .flex-item
+            width: 320px
+
+            img
+                +size(150px)
+                padding: 40px 0
+            
+            h3
+                font:
+                    size: 24px
+                color: #171C34
+                padding-bottom: 24px
+            
+            p
+                max-width: 320px
+                margin: 0 auto
