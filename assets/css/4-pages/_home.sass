@@ -1,4 +1,4 @@
-.feature, .client
+.feature, .client, .pricing
     text-align: center
     
     img
@@ -51,7 +51,7 @@
         background: #FFFFFF;
         border-radius: 10px;
         width: 320px
-        margin: 0 10px
+        margin: 20px 10px
         padding: 80px 40px 60px
 
         img
@@ -60,6 +60,113 @@
         
         p
             max-width: 340px
+            font:
+                size: 20px
+            color: #171C34
+        
+        .client-name
+            font:
+                size: 14px
+            color: #919AA3
+            padding-top: 30px
+
+.pricing
+
+/* The switch - the box around the slider
+
+.switch
+  position: relative
+  display: inline-block
+  width: 60px
+  height: 26px
+  margin: 80px 0 0 0
+  input
+    display: none
+    
+
+/* Hide default HTML checkbox
+
+/* The slider
+
+.slider
+  position: absolute
+  cursor: pointer
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: trasparent
+  border: 1px solid #9A9A9A
+  -webkit-transition: .4s
+  transition: .4s
+  &:before
+    position: absolute
+    content: ""
+    height: 20px
+    width: 20px
+    left: 6px
+    bottom: 2px
+    background-color: $primary-color
+    -webkit-transition: .4s
+    transition: .4s
+
+input
+  &:checked + .slider
+    background-color: transparent
+  &:focus + .slider
+    box-shadow: 0 0 1px $primary-color
+  &:checked + .slider:before
+    -webkit-transform: translateX(26px)
+    -ms-transform: translateX(26px)
+    transform: translateX(26px)
+
+/* Rounded sliders
+
+.slider.round
+  border-radius: 34px
+  &:before
+    border-radius: 50%
+
+.pricing-cards
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    padding-top: 40px
+
+    .card
+        margin: 20px
+        border: none
+        padding-bottom: 70px
+
+        .card-header
+            font-size: 12px
+            color: #586377
+            border: none
+            background: none
+            text-transform: uppercase
+            padding: 40px 0 50px 0
+    
+    .list-group
+        padding-bottom: 50px
+        
+        img
+            +size(10px)
+            margin-right: 10px
+
+        .list-group-item
+            color: #586377
+            border: none
+            text-align: left
+            margin-left: 20px
+
+    .blue
+        color: $primary-color
+    
+    .amateur
+        background: #FFFFFF
+        box-shadow: 0 4px 15px 0 rgba(7,42,68,0.10)
+        border-radius: 10px
+
 
 @media only screen and (max-width: 1132px)
     .feature
